@@ -1,0 +1,402 @@
+// Variables
+$font-body: 'Ysabeau SC', sans-serif;
+$font-heading: 'Parkinsans', sans-serif;
+$font-special: 'Parkinsans', sans-serif;
+$font-marker: 'Ga Maamli', cursive;
+
+$color-text: #050344; // Dark Blue
+$color-link: #E91E63; // Highlight Pink
+$color-link-hover: #050344; // Highlight Pink
+$color-nav-link-hover: #FFFFFF; // White
+$color-nav-bg: #050344; // Background Dark Blue
+$color-headings: #E91E63; // Highlight Pink
+$color-home-h1: #E91E63; // Highlight Pink
+$color-home-h2: #120344; // Accent Purple
+$color-card-border: #120344; // Accent Purple
+$color-footer-bg: #050344; // Background Dark Blue
+$color-footer-link: #FFFFFF; // White
+$color-footer-link-hover: #E91E63; // Highlight Pink
+$color-form-border: #120344; // Accent Purple
+$color-form-bg: #FFFFFF; // Background White
+$color-form-label: #050344; // Dark Blue
+$color-submit: #E91E63; // Highlight Pink
+$color-submit-hover: #120344; // Accent Purple
+$color-clear: #FFFFFF; // White
+$color-clear-hover: #E91E63; // Highlight Pink
+$box-shadow: 0 0 2rem rgba(23, 4, 68, 0.6); // Derived from the theme
+$color-home-main: rgba(207, 204, 216, 0.6);
+$color-th-background: #E91E63; // Highlight Pink
+$color-th-color: #FFFFFF; // White
+$color-btn: #FFFFFF; // White
+
+// General
+body {
+    font-family: $font-body;
+    color: $color-text;
+}
+
+a {
+    color: $color-link;
+
+    &:hover {
+        color: $color-link-hover;
+        text-decoration: none;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-heading;
+    color: $color-headings;
+}
+
+.material-icons {
+    font-size: 2.5rem; // Responsive size
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.displayCenter {
+    text-align: center;
+}
+
+// Navigation Menu
+nav {
+    background-color: $color-nav-bg;
+    vertical-align: middle;
+    min-height: 5.5rem; // Responsive height
+    border-bottom: 1px solid $color-nav-bg;
+    border-bottom-right-radius: 0.625rem;
+    border-bottom-left-radius: 0.625rem;
+
+    ul {
+        display: inline;
+        list-style-type: none;
+
+        li {
+            display: inline;
+            padding: 0.625rem;
+
+            &.active a {
+                font-weight: bold;
+                color: $color-nav-link-hover;
+            }
+        }
+    }
+
+    form {
+        display: inline;
+    }
+
+    #search_form {
+        float: right;
+        margin-right: 1.25rem;
+    }
+
+    input,
+    select {
+        vertical-align: top;
+        margin-top: 0.625rem;
+    }
+
+    .material-icons {
+        color: $color-btn;
+        font-size: 1.6875rem;
+        display: block;
+    }
+
+    button {
+        margin-top: 0.9375rem;
+        background-color: $color-nav-bg;
+        border: none;
+    }
+
+    .form-control {
+        height: calc(1.5em + 0.75rem + 2px);
+        padding: 0.175rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: $color-form-label;
+        background-color: $color-form-bg;
+        background-clip: padding-box;
+        border: 1px solid $color-form-border;
+        border-radius: 0.25rem;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+}
+
+// Search bars
+#searchBar {
+    margin: 0;
+
+    .btn {
+        background-color: $color-nav-bg;
+        color: $color-btn;
+    }
+}
+
+// Home
+.homeMain {
+    min-height: 40vh; // Adjust for viewport height
+    background-color: $color-home-main;
+    padding: 7rem 0;
+
+    h1 {
+        font-size: 6rem;
+        text-transform: uppercase;
+        color: $color-home-h1;
+        font-family: $font-marker;
+        margin-bottom: 5rem;
+        margin-left: 5rem;
+    }
+
+    h2 {
+        color: $color-home-h2;
+        font-family: $font-special;
+        text-transform: uppercase;
+        margin-bottom: 1.25rem;
+        font-size: 3.75rem;
+        margin-left: 5rem;
+    }
+
+    .homeMainimage {
+        border-radius: 50%;
+        overflow: hidden;
+        width: 20rem;
+        height: 20rem;
+        box-shadow: $box-shadow;
+        margin: 0 3.125rem 0 1.875rem;
+    }
+}
+
+// Gallery - Activity Images
+#menu {
+    margin-bottom: 2rem;
+}
+
+.card {
+    border: 1px solid $color-card-border;
+    border-radius: 1.5625rem;
+    box-shadow: $box-shadow;
+    overflow: hidden;
+    text-align: center;
+    padding: 0.625rem;
+    background-color: $color-form-bg;
+    width: 20rem;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h2,
+.card a,
+.card p {
+    margin: 0.625rem 0;
+}
+
+.hovereffect {
+    align-items: center;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: auto;
+        transition: opacity 0.35s, transform 0.35s;
+        display: block;
+        z-index: 1; // Ensure the imageis below the overlay
+    }
+
+    &:hover {
+        img {
+            opacity: 0.7; // Dim the imageslightly
+            transform: scale(1.05); // Slight zoom-in effect
+        }
+    }
+
+    h4 {
+        margin-top: 1rem; // Ensure spacing below the image
+        color: $color-headings;
+        font-size: 1.25rem;
+        text-align: center;
+        z-index: 1; // Ensure it's not affected by the overlay
+    }
+
+    h4:hover {
+        color: $color-link-hover;
+    }
+}
+
+.card-link {
+    min-height: 4.5rem;
+}
+
+// Forms
+#form {
+    box-shadow: $box-shadow;
+    margin: 2.5rem;
+    padding: 2.5rem;
+
+    .form-control {
+        display: block;
+        width: 96%;
+        height: calc(1.5em + 0.75rem + 2px);
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: $color-form-label;
+        background-color: $color-form-bg;
+        background-clip: padding-box;
+        border: 1px solid $color-form-border;
+        border-radius: 0.25rem;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+
+    label {
+        color: $color-form-label;
+        display: inline-block;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .required:after {
+        content: " *";
+        color: red;
+    }
+
+    #submit {
+        background: $color-submit;
+        padding: 0.175rem 1.55rem;
+        color: $color-link-hover;
+        border-radius: 50px;
+        transition: 0.3s;
+        position: relative;
+        margin: 1.25rem;
+        border: none;
+
+        &:hover {
+            background: $color-submit-hover;
+        }
+    }
+
+    #clear {
+        background: $color-clear;
+        padding: 0.175rem 1.55rem;
+        color: $color-submit;
+        border-radius: 50px;
+        transition: 0.3s;
+        position: relative;
+        margin: 1.25rem;
+        border: 1px solid $color-submit;
+
+        &:hover {
+            background: $color-clear-hover;
+        }
+    }
+
+    .submit_button {
+        display: block;
+        text-align: center;
+    }
+
+    .material-icons {
+        font-size: 1.6875rem;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+// Table
+
+#list {
+    border: 1px solid #dee2e6;
+    text-align: left;
+}
+
+#list th {
+    font-weight: bold;
+    background-color: $color-th-background;
+    color: $color-th-color;
+    font-weight: bolder;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow wrapping for smaller screens */
+    gap: 1rem;
+    /* Add spacing between items */
+    justify-content: space-between;
+    /* Space items out evenly */
+    align-items: flex-start;
+    /* Align items to the top */
+}
+
+.flex-item {
+    flex: 0 0 30%;
+    /* Fixed width of 30% for the first item */
+}
+
+.flex-item:last-child {
+    flex: 1;
+    /* Allow the last item to take up the remaining space */
+    min-width: 200px;
+    /* Ensure the column doesn’t shrink too small */
+}
+
+.responsive-image {
+    width: 100%;
+    /* Scale the imageto fit its container */
+    height: auto;
+    /* Maintain the aspect ratio */
+    object-fit: cover;
+    /* Ensure the imagefits well */
+    border-radius: 8px;
+    /* Optional: Add rounded corners */
+}
+
+img.details {
+    margin: 2rem;
+    max-width: 30rem;
+}
+
+.btn-color {
+    color: $color-btn;
+    background-color: $color-nav-bg;
+}
+
+.btn-color:hover {
+    background-color: $color-link;
+}
+
+// Footer
+#footer {
+    clear: both;
+    background-color: $color-footer-bg;
+    text-align: center;
+    padding-bottom: 1.25rem;
+    border: 1px solid $color-footer-bg;
+    border-radius: 0.625rem;
+    color: $color-footer-link;
+
+    a {
+        color: $color-footer-link;
+
+        &:hover {
+            color: $color-footer-link-hover;
+        }
+    }
+}

@@ -1,0 +1,465 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: 'Ysabeau SC', sans-serif;
+  color: #36454F;
+  width: 1200px;
+  margin: auto;
+}
+
+a {
+  color: #36454F;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Exo', sans-serif;
+}
+
+.material-icons {
+  font-size: 40px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/*--------------------------------------------------------------
+  # Navigation Menu
+  --------------------------------------------------------------*/
+
+nav {
+  background-color: #008080;
+  vertical-align: middle;
+  min-height: 70px;
+  border-bottom: 1px solid #008080;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+nav ul {
+  display: inline;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  padding: 10px;
+}
+
+nav form {
+  display: inline;
+}
+
+#search_form {
+  float: right;
+  margin-right: 20px;
+}
+
+nav input,
+nav select {
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+nav .material-icons {
+  color: #fff;
+  font-size: 27px;
+  display: block;
+}
+
+.navbar li.active a {
+  font-weight: bold;
+  color: #ffffff;
+
+}
+
+nav button {
+  margin-top: 15px;
+  background-color: #008080;
+  border: none;
+}
+
+/*--------------------------------------------------------------
+  # Search bars 
+  --------------------------------------------------------------*/
+
+#searchBar {
+  margin: 0px;
+}
+
+#searchBar .btn {
+  background-color: #008080;
+  color: #fff;
+}
+
+
+/*--------------------------------------------------------------
+  # Home 
+  --------------------------------------------------------------*/
+
+.homeMain {
+  min-height: 500px;
+  background-color: #fcf9ec;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
+#mainTitle {
+  margin-bottom: 80px;
+}
+
+.homeMain h1 {
+  font-size: 70px;
+  text-transform: uppercase;
+  color: #E57F3D;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.homeMain h2 {
+  color: #008080;
+  font-family: 'Poetsen One', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 60px;
+}
+
+.homeMainimage {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 30rem;
+  height: 30rem;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  margin-right: 50px;
+  margin-left: 30px;
+}
+
+
+/*--------------------------------------------------------------
+  # Gallery - Activity images
+  --------------------------------------------------------------*/
+.card {
+  margin: 30px;
+  width: 20rem;
+  height: inherit;
+  margin: 10px;
+  border: 1px solid#ced4da;
+  border-radius: 25px;
+}
+
+.cardBody {
+  background-color: #ffffff;
+}
+
+#displayCenter {
+  text-align: center;
+}
+
+.cardsrow {
+  text-align: center;
+  margin: auto;
+  width: 1060px;
+}
+
+.square {
+  width: 20rem;
+  height: 12rem;
+  overflow: hidden;
+}
+
+.square img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  float: left;
+}
+
+.hovereffect {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  max-width: none;
+  width: calc(100% + 20px);
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(-10px, 0, 0);
+  backface-visibility: hidden;
+}
+
+.hovereffect:hover img {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  transform: translate3d(0, 0, 0);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  overflow: hidden;
+  padding: 0.5em 0;
+  background-color: transparent;
+}
+
+.hovereffect h2:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: '';
+  transition: transform 0.35s;
+  transform: translate3d(-100%, 0, 0);
+}
+
+.hovereffect:hover h2:after {
+  transform: translate3d(0, 0, 0);
+}
+
+.hovereffect a,
+.hovereffect p {
+  color: #36454F;
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(100%, 0, 0);
+}
+
+.hovereffect:hover a,
+.hovereffect:hover p {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+
+/*--------------------------------------------------------------
+  # Details 
+  --------------------------------------------------------------*/
+#activity_header {
+  margin-top: 60px;
+  text-align: center;
+}
+
+#activity_header h1 {
+  margin-top: 60px;
+}
+
+#activity_header img {
+  max-width: 450px;
+  object-fit: contain;
+}
+
+#activity_header a {
+  color: #008080;
+}
+
+#activity_header a:hover {
+  color: #a7bac1;
+}
+
+.mainTitle {
+  display: block;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.details_icons {
+  display: inline-block;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: center;
+}
+
+#mainTitle {
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+/*--------------------------------------------------------------
+  # Add 
+  --------------------------------------------------------------*/
+
+
+#form {
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  margin: 40px;
+  padding: 40px;
+}
+
+.form-control {
+  display: block;
+  width: 96%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: .375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+label {
+  display: inline-block;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#submit {
+  background: #008080;
+  padding: 6px 44px 8px 30px;
+  color: #fff;
+  border-radius: 50px;
+  transition: 0.3s;
+  position: relative;
+  margin: 20px;
+  border: none;
+}
+
+#clear {
+  background: #fff;
+  padding: 6px 44px 8px 30px;
+  color: #008080;
+  border-radius: 50px;
+  transition: 0.3s;
+  position: relative;
+  margin: 20px;
+  border-color: #008080;
+}
+
+#submit:hover {
+  background: #a7bac1;
+}
+
+#clear:hover {
+  background: #a7bac1;
+}
+
+.submit_button {
+  display: block;
+  text-align: center;
+}
+
+.submit_button .material-icons {
+  font-size: 15px;
+  margin: 5px;
+  display: inline-block;
+}
+
+#maxsize {
+  color: red;
+  font-style: italic;
+  font-size: smaller;
+}
+
+.required:after {
+  content: " *";
+  color: red;
+}
+
+.navbarelement {
+  display: inline;
+  width: auto;
+  border: none;
+  padding: 0;
+  ;
+}
+
+/*--------------------------------------------------------------
+  # List
+  --------------------------------------------------------------*/
+
+#list {
+  border: 1px solid black;
+  text-align: left;
+}
+
+#list th {
+  font-weight: bold;
+  background-color: #fcf9ec;
+  color: #008080;
+  font-weight: bolder;
+}
+
+.flex-container {
+  margin: 2rem 0;
+  display: flex;
+  align-items: flex-start;
+  /* Aligns items to the top */
+}
+
+.flex-item {
+  flex: 1;
+  /* Each flex-item will take up equal space */
+}
+
+.flex-item:first-child {
+  margin-right: auto;
+  /* Pushes the imageto the left */
+}
+
+.flex-item:last-child {
+  margin-left: auto;
+  /* Pushes the table to the right */
+}
+
+
+/*--------------------------------------------------------------
+  # Footer
+  --------------------------------------------------------------*/
+
+#footer {
+  clear: both;
+  background-color: #E57F3D;
+  text-align: center;
+  padding-bottom: 20px;
+  border: 1px solid #E57F3D;
+  border-radius: 10px;
+}
+
+#footer a {
+  color: #008080;
+}
+
+#footer a:hover {
+  color: #fff;
+}

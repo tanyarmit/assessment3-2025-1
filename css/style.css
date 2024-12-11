@@ -1,0 +1,334 @@
+@charset "UTF-8";
+body {
+  font-family: "Ysabeau SC", sans-serif;
+  color: #050344;
+}
+
+a {
+  color: #E91E63;
+}
+a:hover {
+  color: #050344;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Parkinsans", sans-serif;
+  color: #E91E63;
+}
+
+.material-icons {
+  font-size: 2.5rem;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.displayCenter {
+  text-align: center;
+}
+
+nav {
+  background-color: #050344;
+  vertical-align: middle;
+  min-height: 5.5rem;
+  border-bottom: 1px solid #050344;
+  border-bottom-right-radius: 0.625rem;
+  border-bottom-left-radius: 0.625rem;
+}
+nav ul {
+  display: inline;
+  list-style-type: none;
+}
+nav ul li {
+  display: inline;
+  padding: 0.625rem;
+}
+nav ul li.active a {
+  font-weight: bold;
+  color: #FFFFFF;
+}
+nav form {
+  display: inline;
+}
+nav #search_form {
+  float: right;
+  margin-right: 1.25rem;
+}
+nav input,
+nav select {
+  vertical-align: top;
+  margin-top: 0.625rem;
+}
+nav .material-icons {
+  color: #FFFFFF;
+  font-size: 1.6875rem;
+  display: block;
+}
+nav button {
+  margin-top: 0.9375rem;
+  background-color: #050344;
+  border: none;
+}
+nav .form-control {
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.175rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #050344;
+  background-color: #FFFFFF;
+  background-clip: padding-box;
+  border: 1px solid #120344;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#searchBar {
+  margin: 0;
+}
+#searchBar .btn {
+  background-color: #050344;
+  color: #FFFFFF;
+}
+
+.homeMain {
+  min-height: 40vh;
+  background-color: rgba(207, 204, 216, 0.6);
+  padding: 7rem 0;
+}
+.homeMain h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  color: #E91E63;
+  font-family: "Ga Maamli", cursive;
+  margin-bottom: 5rem;
+  margin-left: 5rem;
+}
+.homeMain h2 {
+  color: #120344;
+  font-family: "Parkinsans", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+  font-size: 3.75rem;
+  margin-left: 5rem;
+}
+.homeMain .homeMainimage {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 20rem;
+  height: 20rem;
+  box-shadow: 0 0 2rem rgba(23, 4, 68, 0.6);
+  margin: 0 3.125rem 0 1.875rem;
+}
+
+#menu {
+  margin-bottom: 2rem;
+}
+
+.card {
+  border: 1px solid #120344;
+  border-radius: 1.5625rem;
+  box-shadow: 0 0 2rem rgba(23, 4, 68, 0.6);
+  overflow: hidden;
+  text-align: center;
+  padding: 0.625rem;
+  background-color: #FFFFFF;
+  width: 20rem;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h2,
+.card a,
+.card p {
+  margin: 0.625rem 0;
+}
+
+.hovereffect {
+  align-items: center;
+  overflow: hidden;
+}
+.hovereffect img {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.35s, transform 0.35s;
+  display: block;
+  z-index: 1;
+}
+.hovereffect:hover img {
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+.hovereffect h4 {
+  margin-top: 1rem;
+  color: #E91E63;
+  font-size: 1.25rem;
+  text-align: center;
+  z-index: 1;
+}
+.hovereffect h4:hover {
+  color: #050344;
+}
+
+.card-link {
+  min-height: 4.5rem;
+}
+
+#form {
+  box-shadow: 0 0 2rem rgba(23, 4, 68, 0.6);
+  margin: 2.5rem;
+  padding: 2.5rem;
+}
+#form .form-control {
+  display: block;
+  width: 96%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #050344;
+  background-color: #FFFFFF;
+  background-clip: padding-box;
+  border: 1px solid #120344;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+#form label {
+  color: #050344;
+  display: inline-block;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+#form .required:after {
+  content: " *";
+  color: red;
+}
+#form #submit {
+  background: #E91E63;
+  padding: 0.175rem 1.55rem;
+  color: #050344;
+  border-radius: 50px;
+  transition: 0.3s;
+  position: relative;
+  margin: 1.25rem;
+  border: none;
+}
+#form #submit:hover {
+  background: #120344;
+}
+#form #clear {
+  background: #FFFFFF;
+  padding: 0.175rem 1.55rem;
+  color: #E91E63;
+  border-radius: 50px;
+  transition: 0.3s;
+  position: relative;
+  margin: 1.25rem;
+  border: 1px solid #E91E63;
+}
+#form #clear:hover {
+  background: #E91E63;
+}
+#form .submit_button {
+  display: block;
+  text-align: center;
+}
+#form .material-icons {
+  font-size: 1.6875rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#list {
+  border: 1px solid #dee2e6;
+  text-align: left;
+}
+
+#list th {
+  font-weight: bold;
+  background-color: #E91E63;
+  color: #FFFFFF;
+  font-weight: bolder;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* Allow wrapping for smaller screens */
+  gap: 1rem;
+  /* Add spacing between items */
+  justify-content: space-between;
+  /* Space items out evenly */
+  align-items: flex-start;
+  /* Align items to the top */
+}
+
+.flex-item {
+  flex: 0 0 30%;
+  /* Fixed width of 30% for the first item */
+}
+
+.flex-item:last-child {
+  flex: 1;
+  /* Allow the last item to take up the remaining space */
+  min-width: 200px;
+  /* Ensure the column doesn’t shrink too small */
+}
+
+.responsive-image {
+  width: 100%;
+  /* Scale the imageto fit its container */
+  height: auto;
+  /* Maintain the aspect ratio */
+  object-fit: cover;
+  /* Ensure the imagefits well */
+  border-radius: 8px;
+  /* Optional: Add rounded corners */
+}
+
+img.details {
+  margin: 2rem;
+  max-width: 30rem;
+}
+
+.btn-color {
+  color: #FFFFFF;
+  background-color: #050344;
+}
+
+.btn-color:hover {
+  background-color: #E91E63;
+}
+
+#footer {
+  clear: both;
+  background-color: #050344;
+  text-align: center;
+  padding-bottom: 1.25rem;
+  border: 1px solid #050344;
+  border-radius: 0.625rem;
+  color: #FFFFFF;
+}
+#footer a {
+  color: #FFFFFF;
+}
+#footer a:hover {
+  color: #E91E63;
+}
+
+/*# sourceMappingURL=style.css.map */
