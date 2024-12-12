@@ -2,7 +2,7 @@
 
 <nav class="navbar navbar-expand-sm navbar-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="home.php">
+        <a class="navbar-brand" href="index.php">
             <img src="images/logo.png" alt="logo" class="img-fluid" width="60" height="60">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">

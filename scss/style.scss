@@ -333,41 +333,6 @@ nav {
     font-weight: bolder;
 }
 
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    /* Allow wrapping for smaller screens */
-    gap: 1rem;
-    /* Add spacing between items */
-    justify-content: space-between;
-    /* Space items out evenly */
-    align-items: flex-start;
-    /* Align items to the top */
-}
-
-.flex-item {
-    flex: 0 0 30%;
-    /* Fixed width of 30% for the first item */
-}
-
-.flex-item:last-child {
-    flex: 1;
-    /* Allow the last item to take up the remaining space */
-    min-width: 200px;
-    /* Ensure the column doesn’t shrink too small */
-}
-
-.responsive-image {
-    width: 100%;
-    /* Scale the imageto fit its container */
-    height: auto;
-    /* Maintain the aspect ratio */
-    object-fit: cover;
-    /* Ensure the imagefits well */
-    border-radius: 8px;
-    /* Optional: Add rounded corners */
-}
-
 img.details {
     margin: 2rem;
     max-width: 30rem;
